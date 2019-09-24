@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/core/Menu";
+import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
+import SideDrawer from "./SideDrawer";
 
 
 const Header = () => {
+    const [Drawer,ChangeDrawer] = useState<boolean>(false);
     return (
         <div>
            <AppBar position="fixed"
@@ -15,10 +17,21 @@ const Header = () => {
                padding:'10px 0'
            }}
            >
-               <Toolbar>
+               <Toolbar style={{display:'flex',justifyContent:'space-between'  }}>
                    <div className="header_logo">
                     <div className="header_logo-main">Led Zeppelin</div>
                    </div>
+                   <IconButton
+                   aria-label="Menu"
+                   color="inherit"
+                   onClick={()=>ChangeDrawer(!Drawer)}
+                   >
+                       <MenuIcon/>
+                   </IconButton>
+                   <SideDrawer
+                       open={Drawer}
+                       onClose={ChangeDrawer}
+                   />
                </Toolbar>
            </AppBar>
         </div>
