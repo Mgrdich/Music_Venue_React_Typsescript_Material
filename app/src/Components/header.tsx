@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -8,11 +8,13 @@ import SideDrawer from "./SideDrawer";
 
 const Header = () => {
     const [Drawer,ChangeDrawer] = useState<boolean>(false);
+    const [headerShow,ChangeHeaderShow] = useState<boolean>(false);
+
     return (
         <div>
            <AppBar position="fixed"
            style={{
-               backgroundColor:'#2f2f2f',
+               backgroundColor:(headerShow)?'#2f2f2f':'transparent',
                boxShadow:'none',
                padding:'10px 0'
            }}
