@@ -1,2 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
 body {
-  background-color: darkred; }
+  font-family: 'Neucha', cursive; }
+
+/* header styling */
+.header_logo-main {
+  font-size: 48px; }

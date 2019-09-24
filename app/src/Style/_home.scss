@@ -1,3 +1,6 @@
- body {
-   background-color: darkred;
- }
+/* header styling */
+.header_logo {
+  &-main  {
+    font-size: 48px;
+  }
+}
