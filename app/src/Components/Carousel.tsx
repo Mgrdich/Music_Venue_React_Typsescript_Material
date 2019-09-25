@@ -23,7 +23,7 @@ const Carousel: React.FC = () => {
             <Slider {...settings}>
                 {allImages.map((item: string, index: number): JSX.Element => {
                     return (
-                        <div className={`img img${index}`} key={index}>
+                        <div className={`slider_img img${index}`} key={index}>
                             <img src={item} alt=""/>
                         </div>
                     )
