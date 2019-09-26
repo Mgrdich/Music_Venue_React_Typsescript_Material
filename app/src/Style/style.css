@@ -6,33 +6,28 @@ body {
 /*----carrousel----*/
 .carrousel_wrapper {
   overflow: hidden; }
-
-.carrousel_wrapper .slider_img img {
-  width: 100%;
-  height: auto; }
+  .carrousel_wrapper .slider_img img {
+    width: 100%;
+    height: auto; }
 
 .carrousel_time {
   position: relative; }
-
-.carrousel_time .countdown {
-  position: absolute;
-  left: 0;
-  bottom: 0; }
-
-.carrousel_time .countdown .countdown_top {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
-
-.carrousel_time .countdown .countdown_bottom .countdown_time {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
-
-.carrousel_time .countdown .countdown_bottom .countdown_tag {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
+  .carrousel_time .countdown {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    .carrousel_time .countdown .countdown_top {
+      background-color: #000000;
+      font-size: 45px;
+      color: #B48E2E; }
+    .carrousel_time .countdown .countdown_bottom .countdown_time {
+      background-color: #000000;
+      font-size: 45px;
+      color: #B48E2E; }
+    .carrousel_time .countdown .countdown_bottom .countdown_tag {
+      background-color: #000000;
+      font-size: 45px;
+      color: #B48E2E; }
 
 /* header styling */
 .header_logo-main {
