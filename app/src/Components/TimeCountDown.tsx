@@ -5,7 +5,7 @@ let Slide = require("react-reveal/Slide");
 
 const TimeCountDown: React.FC = () => {
     const deadline = 'Dec, 18, 2020';
-    const [myDate, ChangeData] = useState<myDate>({});
+    const [myDate1, ChangeData] = useState<myDate>({seconds: 0, minutes: 0, hours: 0, days: 0});
 
     useEffect(() => {
         setInterval(() => getTimeUntil(deadline), 1000);
@@ -31,14 +31,14 @@ const TimeCountDown: React.FC = () => {
                     Concert Start In
                 </div>
                 {
-                    Object.keys(myDate).map((item) => {
+                    Object.keys(myDate1).map((item, index: number) => {
                         return (
-                            <div className="countdown_bottom">
+                            <div className="countdown_bottom" key={index}>
                                 <div className="countdown_time">
                                     {item}
                                 </div>
                                 <div className="countdown_tag">
-                                    {myDate.days}
+                                    {myDate1[item]}
                                 </div>
                             </div>
                         );
