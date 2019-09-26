@@ -10,6 +10,37 @@
   }
 }
 
-.header_logo-main {
-  color: $main_color;
+.carrousel_time {
+  position: relative;
+
+  .countdown {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .countdown {
+      &_top {
+        background-color: $backgroundColor;
+        font-size: 45px;
+        color: $main_color;
+      }
+
+      &_bottom {
+        .countdown {
+          &_time {
+            background-color: $backgroundColor;
+            font-size: 45px;
+            color: $main_color;
+          }
+          &_tag {
+            background-color: $backgroundColor;
+            font-size: 45px;
+            color: $main_color;
+          }
+        }
+      }
+
+    }
+  }
 }
+

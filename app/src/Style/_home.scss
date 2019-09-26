@@ -1,6 +1,8 @@
 /* header styling */
 .header_logo {
   &-main  {
+    color: $main_color;
     font-size: 48px;
   }
+
 }

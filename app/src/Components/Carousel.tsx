@@ -29,6 +29,7 @@ const Carousel: React.FC = () => {
                     )
                 })}
             </Slider>
+
         </div>
     );
 };

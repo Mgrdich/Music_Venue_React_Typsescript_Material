@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./Components/header";
-import Carousel from "./Components/Carousel";
+import CarouselTime from "./Components/CarouselTime";
 
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
         <>
             <div style={{height:"1800px"}}>
                 <Header/>
-                <Carousel/>
+                <CarouselTime/>{/*make the time higher order component*/}
             </div>
         </>
     );
