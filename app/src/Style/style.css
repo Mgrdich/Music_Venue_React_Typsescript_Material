@@ -2,6 +2,17 @@
 body {
   font-family: 'Neucha', cursive; }
 
+/*----carrousel----*/
+.carrousel_wrapper {
+  overflow: hidden; }
+
+.carrousel_wrapper .slider_img img {
+  width: 100%;
+  height: auto; }
+
+.header_logo-main {
+  color: #B48E2E; }
+
 /* header styling */
 .header_logo-main {
   font-size: 48px; }

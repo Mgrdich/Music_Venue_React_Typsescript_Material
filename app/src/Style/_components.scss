@@ -1,8 +1,15 @@
 /*----carrousel----*/
 .carrousel_wrapper {
   overflow: hidden;
+
   .slider_img {
-   width: 100%;
-   height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+}
+
+.header_logo-main {
+  color: $main_color;
 }
