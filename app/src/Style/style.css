@@ -82,3 +82,18 @@ body {
 
 .AboutUs .card .body {
   font-size: 35px; }
+
+.highlights {
+  margin: 0 auto; }
+
+.highlights .description {
+  margin: 0 auto; }
+
+.highlights .description h2 {
+  font-size: 60px;
+  text-align: center; }
+
+.highlights .description_body {
+  color: white;
+  text-align: center;
+  font-size: 30px; }
