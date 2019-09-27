@@ -4,5 +4,23 @@
     color: $main_color;
     font-size: 48px;
   }
-
+}
+/*About us section*/
+.AboutUs {
+  .card {
+    border: 1px solid $main_color;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    &:before {
+      content: " ";
+      position: absolute;
+      z-index: -1;
+      left: 3px;
+      top: 3px;
+      right: 3px;
+      bottom: 3px;
+      border: 1px solid $main_color;
+    }
+  }
 }

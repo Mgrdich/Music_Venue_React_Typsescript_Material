@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Deadline, myDate} from "../interfaces/CompInterfaces";
+import {myDate} from "../interfaces/CompInterfaces";
 
 let Slide = require("react-reveal/Slide");
 
@@ -30,20 +30,22 @@ const TimeCountDown: React.FC = () => {
                 <div className="countdown_top">
                     Concert Start In
                 </div>
-                {
-                    Object.keys(myDate1).map((item, index: number) => {
-                        return (
-                            <div className="countdown_bottom" key={index}>
-                                <div className="countdown_time">
-                                    {item}
+                <div className="countdown_bottom_container">
+                    {
+                        Object.keys(myDate1).map((item, index: number) => {
+                            return (
+                                <div className="countdown_bottom" key={index}>
+                                    <div className="countdown_time">
+                                        {item}
+                                    </div>
+                                    <div className="countdown_tag">
+                                        {myDate1[item]}
+                                    </div>
                                 </div>
-                                <div className="countdown_tag">
-                                    {myDate1[item]}
-                                </div>
-                            </div>
-                        );
-                    })
-                }
+                            );
+                        })
+                    }
+                </div>
             </div>
         </Slide>
     );

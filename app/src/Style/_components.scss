@@ -26,12 +26,19 @@
       }
 
       &_bottom {
+        &:not(:last-child) {
+          padding-left: 10px;
+        }
+
+        background-color: black;
+
         .countdown {
           &_time {
             background-color: $backgroundColor;
             font-size: 45px;
             color: $main_color;
           }
+
           &_tag {
             background-color: $backgroundColor;
             font-size: 45px;
@@ -39,7 +46,12 @@
           }
         }
       }
+    }
 
+    .countdown_bottom_container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
     }
   }
 }

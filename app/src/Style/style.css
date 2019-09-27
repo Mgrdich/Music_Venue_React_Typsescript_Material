@@ -6,30 +6,63 @@ body {
 /*----carrousel----*/
 .carrousel_wrapper {
   overflow: hidden; }
-  .carrousel_wrapper .slider_img img {
-    width: 100%;
-    height: auto; }
+
+.carrousel_wrapper .slider_img img {
+  width: 100%;
+  height: auto; }
 
 .carrousel_time {
   position: relative; }
-  .carrousel_time .countdown {
-    position: absolute;
-    left: 0;
-    bottom: 0; }
-    .carrousel_time .countdown .countdown_top {
-      background-color: #000000;
-      font-size: 45px;
-      color: #B48E2E; }
-    .carrousel_time .countdown .countdown_bottom .countdown_time {
-      background-color: #000000;
-      font-size: 45px;
-      color: #B48E2E; }
-    .carrousel_time .countdown .countdown_bottom .countdown_tag {
-      background-color: #000000;
-      font-size: 45px;
-      color: #B48E2E; }
+
+.carrousel_time .countdown {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.carrousel_time .countdown .countdown_top {
+  background-color: #000000;
+  font-size: 45px;
+  color: #B48E2E; }
+
+.carrousel_time .countdown .countdown_bottom {
+  background-color: black; }
+
+.carrousel_time .countdown .countdown_bottom:not(:last-child) {
+  padding-left: 10px; }
+
+.carrousel_time .countdown .countdown_bottom .countdown_time {
+  background-color: #000000;
+  font-size: 45px;
+  color: #B48E2E; }
+
+.carrousel_time .countdown .countdown_bottom .countdown_tag {
+  background-color: #000000;
+  font-size: 45px;
+  color: #B48E2E; }
+
+.carrousel_time .countdown .countdown_bottom_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
 
 /* header styling */
 .header_logo-main {
   color: #B48E2E;
   font-size: 48px; }
+
+/*About us section*/
+.AboutUs .card {
+  border: 1px solid #B48E2E;
+  width: 300px;
+  height: 300px;
+  position: relative; }
+
+.AboutUs .card:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  left: 3px;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid #B48E2E; }
