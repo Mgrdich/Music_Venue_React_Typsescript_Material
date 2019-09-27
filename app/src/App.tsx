@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./Components/header";
 import CarouselTime from "./Components/CarouselTime";
-import AboutUs from "./Components/AboutUs";
+import AboutUs from "./Components/Stateless/AboutUs";
 
 
 const App = () => {

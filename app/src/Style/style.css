@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
 body {
   font-family: 'Neucha', cursive;
-  background-color: #000000; }
+  background-color: #000000;
+  color: #B48E2E;
+  box-sizing: border-box; }
 
 /*----carrousel----*/
 .carrousel_wrapper {
@@ -51,11 +53,19 @@ body {
   font-size: 48px; }
 
 /*About us section*/
+.AboutUs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around; }
+
 .AboutUs .card {
   border: 1px solid #B48E2E;
   width: 300px;
   height: 300px;
-  position: relative; }
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  text-align: center; }
 
 .AboutUs .card:before {
   content: " ";
@@ -66,3 +76,9 @@ body {
   right: 3px;
   bottom: 3px;
   border: 1px solid #B48E2E; }
+
+.AboutUs .card .header {
+  font-size: 40px; }
+
+.AboutUs .card .body {
+  font-size: 35px; }

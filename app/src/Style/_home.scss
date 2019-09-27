@@ -7,11 +7,17 @@
 }
 /*About us section*/
 .AboutUs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
   .card {
     border: 1px solid $main_color;
     width: 300px;
     height: 300px;
     position: relative;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    text-align: center;
     &:before {
       content: " ";
       position: absolute;
@@ -21,6 +27,12 @@
       right: 3px;
       bottom: 3px;
       border: 1px solid $main_color;
+    }
+    .header{
+      font-size: 40px;
+    }
+    .body {
+      font-size: 35px;
     }
   }
 }
