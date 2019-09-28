@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import JsonContent from "../../WebsiteContent/content.json"
 import Description from "./Description";
+import {useDeepCompareEffect} from "../../CustomHooks/DeepCompareUseEffect";
 
 let Fade = require("react-reveal/Fade");
 
@@ -11,7 +12,7 @@ interface NumberChange {
 
 const Highlights = () => {
     const [disCountNumber, ChangeDisNumber] = useState<NumberChange>({startNumber: 0, endNumber: 30});
-
+    console.log(disCountNumber);
     function changePercentage() {
         let obj = {...disCountNumber};
         if (disCountNumber.startNumber < disCountNumber.endNumber)
@@ -21,9 +22,15 @@ const Highlights = () => {
     useEffect(()=>{
         setTimeout(()=>{
             changePercentage();
-        },30);
-        
-    },[disCountNumber]);
+        },250);
+
+    },[disCountNumber.startNumber]);
+
+/*    useDeepCompareEffect(() => {
+        setTimeout(() => {
+            changePercentage();
+        }, 250);
+    }, disCountNumber)*/;
 
     return (
         <div className="highlights">
@@ -32,7 +39,7 @@ const Highlights = () => {
                 <div className="ticket_description">
                     <Fade onReveal={changePercentage}>
                         <div className="number">
-                            {disCountNumber.startNumber}
+                            {disCountNumber.startNumber}%
                         </div>
                     </Fade>
                     <Description class="purchase_description" headerContent="Purchase your Ticket here"

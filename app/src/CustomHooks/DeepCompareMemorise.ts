@@ -1,6 +1,6 @@
 import {useRef} from "react";
 
-function deepCompareEquals(a: any, b: any): boolean {
+export function deepCompareEquals(a: any, b: any): boolean {
     let aKeys: string[] = Object.keys(a);
     let bKeys: string[] = Object.keys(b);
     if (aKeys.length !== bKeys.length) {
@@ -17,7 +17,6 @@ function deepCompareEquals(a: any, b: any): boolean {
 
 export function useDeepCompareMemoize(value: any) {
     const ref = useRef();
-
     if (!deepCompareEquals(value, ref.current)) {
         ref.current = value
     }
