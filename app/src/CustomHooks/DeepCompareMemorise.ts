@@ -1,18 +1,20 @@
 import {useRef} from "react";
 
 export function deepCompareEquals(a: any, b: any): boolean {
-    let aKeys: string[] = Object.keys(a);
-    let bKeys: string[] = Object.keys(b);
-    if (aKeys.length !== bKeys.length) {
-        return false;
-    } else {
-        for (let i = 0; i < aKeys.length; i++) {
-            if (a[aKeys[i]] !== b[bKeys[i]]) {
-                return false
+    if (a && b) {
+        let aKeys: string[] = Object.keys(a);
+        let bKeys: string[] = Object.keys(b);
+        if (aKeys.length !== bKeys.length) {
+            return false;
+        } else {
+            for (let i = 0; i < aKeys.length; i++) {
+                if (a[aKeys[i]] !== b[bKeys[i]]) {
+                    return false
+                }
             }
+            return true;
         }
-        return true;
-    }
+    } else return false
 }
 
 export function useDeepCompareMemoize(value: any) {

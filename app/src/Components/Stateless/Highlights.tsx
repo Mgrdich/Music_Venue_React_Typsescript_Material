@@ -19,18 +19,20 @@ const Highlights = () => {
             obj.startNumber += 1;
         ChangeDisNumber(obj);
     }
+/*
     useEffect(()=>{
         setTimeout(()=>{
             changePercentage();
         },250);
 
     },[disCountNumber.startNumber]);
+*/
 
-/*    useDeepCompareEffect(() => {
+    useDeepCompareEffect(() => {
         setTimeout(() => {
             changePercentage();
         }, 250);
-    }, disCountNumber)*/;
+    }, disCountNumber);
 
     return (
         <div className="highlights">
