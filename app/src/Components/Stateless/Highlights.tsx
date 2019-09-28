@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import JsonContent from "../../WebsiteContent/content.json"
 import Description from "./Description";
 
@@ -18,6 +18,12 @@ const Highlights = () => {
             obj.startNumber += 1;
         ChangeDisNumber(obj);
     }
+    useEffect(()=>{
+        setTimeout(()=>{
+            changePercentage();
+        },30);
+        
+    },[disCountNumber]);
 
     return (
         <div className="highlights">
