@@ -126,3 +126,23 @@ body {
   display: block;
   color: white;
   font-size: 60px; }
+
+.highlights .ticket_description .purchase_description .header {
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+.highlights .ticket_description .purchase_description .body {
+  font-size: 30px;
+  color: white;
+  width: 600px;
+  margin-bottom: 20px; }
+
+.highlights .ticket_description .purchase_description button {
+  background-color: #B48E2E;
+  color: black;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  outline: none; }

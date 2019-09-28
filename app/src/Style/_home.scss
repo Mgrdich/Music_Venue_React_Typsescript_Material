@@ -88,5 +88,27 @@
         font-size: 60px;
       }
     }
+    .purchase_description{
+        .header {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+        .body {
+          font-size: 30px;
+          color: white;
+          width: 600px;
+          margin-bottom: 20px;
+        }
+        button {
+          background-color: $main_color;
+          color: black;
+          font-size: 20px;
+          border: 1px solid black;
+          border-radius: 4px;
+          width: 120px;
+          height: 40px;
+          outline: none;
+        }
+    }
   }
 }

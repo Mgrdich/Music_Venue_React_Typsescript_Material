@@ -10,6 +10,7 @@ const Description:React.FC<IProps> = (props) => {
         <div className={props.class}>
            <div className="header">{props.headerContent}</div>
            <div className="body">{props.bodyContent}</div>
+            {props.children}
         </div>
     );
 };
