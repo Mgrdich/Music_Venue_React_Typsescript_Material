@@ -81,19 +81,48 @@ body {
   font-size: 40px; }
 
 .AboutUs .card .body {
-  font-size: 35px; }
+  margin-top: 10px;
+  font-size: 30px;
+  color: white; }
 
 .highlights {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 290px; }
 
 .highlights .description {
   margin: 0 auto; }
 
-.highlights .description h2 {
+.highlights .description .header {
   font-size: 60px;
   text-align: center; }
 
-.highlights .description_body {
+.highlights .description .body {
   color: white;
   text-align: center;
   font-size: 30px; }
+
+.highlights .description .body:before {
+  content: '';
+  display: block;
+  border: 1px solid #B48E2E;
+  margin-bottom: 50px; }
+
+.highlights .description .body:after {
+  content: '';
+  display: block;
+  border: 1px solid #B48E2E;
+  margin-top: 40px; }
+
+.highlights .ticket_description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px; }
+
+.highlights .ticket_description .number {
+  font-size: 150px; }
+
+.highlights .ticket_description .number:after {
+  content: 'off';
+  display: block;
+  color: white;
+  font-size: 60px; }

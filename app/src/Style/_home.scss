@@ -37,26 +37,56 @@
     }
 
     .body {
-      font-size: 35px;
+      margin-top: 10px;
+      font-size: 30px;
+      color:white;
+
     }
   }
 }
 
 .highlights {
   margin: 0 auto;
-
+  padding: 0 290px;
   .description {
     margin: 0 auto;
-
-    h2 {
+    .header {
       font-size: 60px;
       text-align: center;
     }
 
-    &_body {
+    .body {
       color: white;
       text-align: center;
       font-size: 30px;
+
+      &:before{
+      content: '';
+      display: block;
+      border: 1px solid $main_color;
+      margin-bottom: 50px;
+      }
+      &:after{
+      content: '';
+      display: block;
+      border: 1px solid $main_color;
+      margin-top: 40px;
+      }
+
+    }
+  }
+  .ticket_description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    .number {
+      font-size: 150px;
+      &:after {
+        content: 'off';
+        display: block;
+        color:white;
+        font-size: 60px;
+      }
     }
   }
 }
