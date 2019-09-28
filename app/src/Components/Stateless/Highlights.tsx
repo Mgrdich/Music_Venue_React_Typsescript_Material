@@ -1,18 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import JsonContent from "../../WebsiteContent/content.json"
 import Description from "./Description";
 
 let Fade = require("react-reveal/Fade");
 
+interface NumberChange {
+    startNumber: number;
+    endNumber: number;
+}
+
 const Highlights = () => {
+    const [disCountNumber, ChangeDisNumber] = useState<NumberChange>({startNumber: 0, endNumber: 30});
+
+    function changePercentage() {
+        let obj = {...disCountNumber};
+        if (disCountNumber.startNumber < disCountNumber.endNumber)
+            obj.startNumber += 1;
+        ChangeDisNumber(obj);
+    }
+
     return (
         <div className="highlights">
             <Fade delay={500}>
                 <Description class="description" headerContent="Highlights" bodyContent={JsonContent.lorem}/>
                 <div className="ticket_description">
-                    <div className="number">
-                        30%
-                    </div>
+                    <Fade onReveal={changePercentage}>
+                        <div className="number">
+                            {disCountNumber.startNumber}
+                        </div>
+                    </Fade>
                     <Description class="purchase_description" headerContent="Purchase your Ticket here"
                                  bodyContent={JsonContent.purchase}>
                         <button>Hello</button>
