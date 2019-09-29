@@ -39,19 +39,22 @@
     .body {
       margin-top: 10px;
       font-size: 30px;
-      color:white;
+      color: white;
 
     }
   }
 }
 
 .highlights {
-  margin: 0 auto;
+  margin: 100px auto 0;
   padding: 0 290px;
+
   .description {
     margin: 0 auto;
+
     .header {
       font-size: 60px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
@@ -60,55 +63,97 @@
       text-align: center;
       font-size: 30px;
 
-      &:before{
-      content: '';
-      display: block;
-      border: 1px solid $main_color;
-      margin-bottom: 50px;
+      &:before {
+        content: '';
+        display: block;
+        border: 1px solid $main_color;
+        margin-bottom: 50px;
       }
-      &:after{
-      content: '';
-      display: block;
-      border: 1px solid $main_color;
-      margin-top: 40px;
+
+      &:after {
+        content: '';
+        display: block;
+        border: 1px solid $main_color;
+        margin-top: 40px;
       }
 
     }
   }
+
   .ticket_description {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+
     .number {
       font-size: 150px;
+
       &:after {
         content: 'off';
         display: block;
-        color:white;
+        color: white;
         font-size: 60px;
       }
     }
-    .purchase_description{
-        .header {
-          font-size: 40px;
-          margin-bottom: 20px;
-        }
-        .body {
-          font-size: 30px;
-          color: white;
-          width: 600px;
-          margin-bottom: 20px;
-        }
-        button {
-          background-color: $main_color;
-          color: black;
-          font-size: 20px;
-          border: 1px solid black;
-          border-radius: 4px;
-          width: 120px;
-          height: 40px;
-          outline: none;
-        }
+
+    .purchase_description {
+      .header {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .body {
+        font-size: 30px;
+        color: white;
+        width: 600px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.header_pricing {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+
+  .prices_card {
+    border: 1px solid $main_color;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+
+    .header {
+      font-size: 75px;
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 75%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        border: 1px solid white;
+      }
+    }
+
+    .body {
+      margin-top: 20px;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
   }
 }
