@@ -8,44 +8,36 @@ body {
 /*----carrousel----*/
 .carrousel_wrapper {
   overflow: hidden; }
-
-.carrousel_wrapper .slider_img img {
-  width: 100%;
-  height: auto; }
+  .carrousel_wrapper .slider_img img {
+    width: 100%;
+    height: auto; }
 
 .carrousel_time {
   position: relative; }
-
-.carrousel_time .countdown {
-  position: absolute;
-  left: 0;
-  bottom: 0; }
-
-.carrousel_time .countdown .countdown_top {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
-
-.carrousel_time .countdown .countdown_bottom {
-  background-color: black; }
-
-.carrousel_time .countdown .countdown_bottom:not(:last-child) {
-  padding-left: 10px; }
-
-.carrousel_time .countdown .countdown_bottom .countdown_time {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
-
-.carrousel_time .countdown .countdown_bottom .countdown_tag {
-  background-color: #000000;
-  font-size: 45px;
-  color: #B48E2E; }
-
-.carrousel_time .countdown .countdown_bottom_container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse; }
+  .carrousel_time .countdown {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    .carrousel_time .countdown .countdown_top {
+      background-color: #000000;
+      font-size: 45px;
+      color: #B48E2E; }
+    .carrousel_time .countdown .countdown_bottom {
+      background-color: black; }
+      .carrousel_time .countdown .countdown_bottom:not(:last-child) {
+        padding-left: 10px; }
+      .carrousel_time .countdown .countdown_bottom .countdown_time {
+        background-color: #000000;
+        font-size: 45px;
+        color: #B48E2E; }
+      .carrousel_time .countdown .countdown_bottom .countdown_tag {
+        background-color: #000000;
+        font-size: 45px;
+        color: #B48E2E; }
+    .carrousel_time .countdown .countdown_bottom_container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse; }
 
 button {
   background-color: #B48E2E;
@@ -69,86 +61,72 @@ button {
   margin-top: 50px;
   display: flex;
   justify-content: space-around; }
-
-.AboutUs .card {
-  border: 1px solid #B48E2E;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  box-sizing: border-box;
-  padding: 50px 20px;
-  text-align: center; }
-
-.AboutUs .card:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  left: 3px;
-  top: 3px;
-  right: 3px;
-  bottom: 3px;
-  border: 1px solid #B48E2E; }
-
-.AboutUs .card .header {
-  font-size: 40px; }
-
-.AboutUs .card .body {
-  margin-top: 10px;
-  font-size: 30px;
-  color: white; }
+  .AboutUs .card {
+    border: 1px solid #B48E2E;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    text-align: center; }
+    .AboutUs .card:before {
+      content: " ";
+      position: absolute;
+      z-index: -1;
+      left: 3px;
+      top: 3px;
+      right: 3px;
+      bottom: 3px;
+      border: 1px solid #B48E2E; }
+    .AboutUs .card .header {
+      font-size: 40px; }
+    .AboutUs .card .body {
+      margin-top: 10px;
+      font-size: 30px;
+      color: white; }
 
 .highlights {
   margin: 100px auto 0;
   padding: 0 290px; }
-
-.highlights .description {
-  margin: 0 auto; }
-
-.highlights .description .header {
-  font-size: 60px;
-  margin-bottom: 20px;
-  text-align: center; }
-
-.highlights .description .body {
-  color: white;
-  text-align: center;
-  font-size: 30px; }
-
-.highlights .description .body:before {
-  content: '';
-  display: block;
-  border: 1px solid #B48E2E;
-  margin-bottom: 50px; }
-
-.highlights .description .body:after {
-  content: '';
-  display: block;
-  border: 1px solid #B48E2E;
-  margin-top: 40px; }
-
-.highlights .ticket_description {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px; }
-
-.highlights .ticket_description .number {
-  font-size: 150px; }
-
-.highlights .ticket_description .number:after {
-  content: 'off';
-  display: block;
-  color: white;
-  font-size: 60px; }
-
-.highlights .ticket_description .purchase_description .header {
-  font-size: 40px;
-  margin-bottom: 20px; }
-
-.highlights .ticket_description .purchase_description .body {
-  font-size: 30px;
-  color: white;
-  width: 600px;
-  margin-bottom: 20px; }
+  .highlights .description {
+    margin: 0 auto; }
+    .highlights .description .header {
+      font-size: 60px;
+      margin-bottom: 20px;
+      text-align: center; }
+    .highlights .description .body {
+      color: white;
+      text-align: center;
+      font-size: 30px; }
+      .highlights .description .body:before {
+        content: '';
+        display: block;
+        border: 1px solid #B48E2E;
+        margin-bottom: 50px; }
+      .highlights .description .body:after {
+        content: '';
+        display: block;
+        border: 1px solid #B48E2E;
+        margin-top: 40px; }
+  .highlights .ticket_description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; }
+    .highlights .ticket_description .number {
+      font-size: 150px; }
+      .highlights .ticket_description .number:after {
+        content: 'off';
+        display: block;
+        color: white;
+        font-size: 60px; }
+    .highlights .ticket_description .purchase_description .header {
+      font-size: 40px;
+      margin-bottom: 20px; }
+    .highlights .ticket_description .purchase_description .body {
+      font-size: 30px;
+      color: white;
+      width: 600px;
+      margin-bottom: 20px; }
 
 .header_pricing {
   margin-top: 100px;
@@ -160,40 +138,35 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-content: center; }
-
-.pricing .prices_card {
-  border: 1px solid #B48E2E;
-  box-sizing: border-box;
-  padding: 50px 20px;
-  max-width: 300px;
-  text-align: center;
-  display: inline-block; }
-
-.pricing .prices_card .header {
-  font-size: 75px;
-  position: relative;
-  display: inline-block; }
-
-.pricing .prices_card .header:after {
-  content: '';
-  display: inline-block;
-  width: 75%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  text-align: center;
-  border: 1px solid white; }
-
-.pricing .prices_card .body {
-  margin-top: 20px;
-  font-size: 30px;
-  margin-bottom: 10px; }
+  .pricing .prices_card {
+    border: 1px solid #B48E2E;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block; }
+    .pricing .prices_card .header {
+      font-size: 75px;
+      position: relative;
+      display: inline-block; }
+      .pricing .prices_card .header:after {
+        content: '';
+        display: inline-block;
+        width: 75%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        border: 1px solid white; }
+    .pricing .prices_card .body {
+      margin-top: 20px;
+      font-size: 30px;
+      margin-bottom: 10px; }
 
 .map {
   margin-top: 100px; }
-
-.map .header {
-  font-size: 60px;
-  margin-bottom: 20px;
-  text-align: center; }
+  .map .header {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center; }

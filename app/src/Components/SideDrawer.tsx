@@ -11,7 +11,8 @@ const SideDrawer: React.FC<IProps> = ({open, onClose}) => {
         scroller.scrollTo(element,{
             duration:1500,
             delay:100,
-            smooth:true
+            smooth:true,
+            offset:-150
         });
     }
     return (
