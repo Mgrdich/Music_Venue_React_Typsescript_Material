@@ -189,3 +189,11 @@ button {
   margin-top: 20px;
   font-size: 30px;
   margin-bottom: 10px; }
+
+.map {
+  margin-top: 100px; }
+
+.map .header {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center; }

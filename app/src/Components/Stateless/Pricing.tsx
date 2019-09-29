@@ -1,6 +1,7 @@
 import React from 'react';
 import Prices from "../../WebsiteContent/prices.json"
 import Description from "./Description";
+let Fade = require("react-reveal/Fade");
 
 const Pricing = () => {
     return (
@@ -10,11 +11,13 @@ const Pricing = () => {
                 {
                     Prices.map((item: any, index: number) => {
                         return (
-                            <Description class="prices_card" headerContent={`${item.price} $`}
-                                         bodyContent={item.description}
-                                         key={index}>
+                            <Fade delay={item.CardDelay} key={index}>
+                                <Description class="prices_card" headerContent={`${item.price} $`}
+                                            bodyContent={item.description}
+                                            >
                                 <button>Go Purchase</button>
                             </Description>
+                            </Fade>
                         );
                     })
                 }

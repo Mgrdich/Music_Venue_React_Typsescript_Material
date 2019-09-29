@@ -1,14 +1,17 @@
 [
   {
-    "price":100,
-     "description":"This one is at the back of the stadium"
+    "price": 100,
+    "description": "This one is at the back of the stadium",
+    "CardDelay": 500
   },
   {
-    "price":150,
-     "description":"This is at the middle of the stadium"
+    "price": 150,
+    "description": "This is at the middle of the stadium",
+    "CardDelay": 250
   },
   {
     "price": 200,
-     "description":"This is where the all the fun part happens"
+    "description": "This is where the all the fun part happens",
+    "CardDelay": 750
   }
 ]

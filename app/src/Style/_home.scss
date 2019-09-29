@@ -1,4 +1,10 @@
 /* header styling */
+@mixin header {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .header_logo {
   &-main {
     color: $main_color;
@@ -53,9 +59,7 @@
     margin: 0 auto;
 
     .header {
-      font-size: 60px;
-      margin-bottom: 20px;
-      text-align: center;
+     @include header;
     }
 
     .body {
@@ -155,5 +159,11 @@
       font-size: 30px;
       margin-bottom: 10px;
     }
+  }
+}
+.map {
+  margin-top: 100px;
+  .header {
+   @include header;
   }
 }

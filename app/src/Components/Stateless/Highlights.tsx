@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import JsonContent from "../../WebsiteContent/content.json"
 import Description from "./Description";
 import {useDeepCompareEffect} from "../../CustomHooks/DeepCompareUseEffect";
+
 let Fade = require("react-reveal/Fade");
 
 interface NumberChange {
@@ -30,15 +31,17 @@ const Highlights = () => {
             <Fade delay={500}>
                 <Description class="description" headerContent="Highlights" bodyContent={JsonContent.lorem}/>
                 <div className="ticket_description">
-                    <Fade onReveal={()=>changePercentage()}>
+                    <Fade onReveal={() => changePercentage()}>
                         <div className="number">
                             {disCountNumber.startNumber}%
                         </div>
                     </Fade>
-                    <Description class="purchase_description" headerContent="Purchase your Ticket here"
-                                 bodyContent={JsonContent.purchase}>
+                    <Fade left>
+                        <Description class="purchase_description" headerContent="Purchase your Ticket here"
+                                            bodyContent={JsonContent.purchase}>
                         <button>Purchase</button>
-                    </Description>
+                        </Description>
+                    </Fade>
 
                 </div>
             </Fade>
