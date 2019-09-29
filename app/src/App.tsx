@@ -15,12 +15,12 @@ const App = () => {
             <div style={{height: "1800px"}}>
                 <Header/>
                 <Element name="Event"><CarouselTime/></Element>{/*make the time higher order component*/}
-                <Element name="about"><AboutUs/></Element>
+                <Element name="Info"><AboutUs/></Element>
                 <Element name="highlights">
                     <Highlights/>
                 </Element>
                 <Element name="Pricing"><Pricing/></Element>
-                <Map/>
+                <Element name="map"><Map/></Element>
             </div>
         </>
     );

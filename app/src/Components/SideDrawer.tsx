@@ -33,6 +33,9 @@ const SideDrawer: React.FC<IProps> = ({open, onClose}) => {
                 <ListItem button onClick={() => scrollToElement("Pricing")}>
                     Pricing
                 </ListItem>
+                <ListItem button onClick={() => scrollToElement("map")}>
+                    Map
+                </ListItem>
             </List>
         </Drawer>
     );
